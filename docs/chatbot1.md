@@ -10,10 +10,16 @@ We will progressively build:
 
 ---
 
+# 0. Setup Environment
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+
 # 1. Install Dependencies
 
 ```bash
-pip install openai anthropic google-genai python-dotenv
+uv add openai anthropic google-genai python-dotenv
 ```
 
 ---
@@ -103,7 +109,7 @@ client = OpenAI()
 # -------------------
 # 2. Model
 # -------------------
-MODEL = "gpt-5"
+MODEL = "gpt-4o-mini"
 
 # -------------------
 # 3. System Prompt
